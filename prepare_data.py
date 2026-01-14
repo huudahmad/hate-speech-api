@@ -19,7 +19,7 @@ print("Cleaning text data")
 df['cleaned_text'] = df['tweet'].apply(clean_text)
 
 #model training fails if there are any empty rows after cleaning because Pandas treats them as NaN (missing data)
-# --- FIX: Drop empty rows (Updated to avoid warning) ---
+# --- FIX: Drop empty rows  ---
 # Convert empty strings to NaN
 df['cleaned_text'] = df['cleaned_text'].replace('', np.nan)
 
