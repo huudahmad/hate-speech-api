@@ -3,5 +3,5 @@ uvicorn
 torch
 transformers
 pydantic
-pandas
-scikit-learn
+# pandas // removed to remove bloat for deployment
+# scikit-learn // removed to remove bloat for deployment
